@@ -7,12 +7,12 @@
 .aside.show {
     display: block;
 }
-.aside .aside-bg {
+.asideBg {
     width: 100%;
     height: 100%;
     background-color: #0008;
 }
-.aside .aside-container {
+.asideContainer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -28,33 +28,33 @@
     box-shadow: -0.5rem 0 0.5rem #0003;
 }
 
-.aside .aside-header {
+.asideHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.aside .aside-title {
+.asideTitle {
     font-size: 2rem;
     line-height: 1em;
     font-weight: normal;
 }
-.aside .fa-times {
+.fa-times {
     background-color: transparent;
     border: none;
     font-size: 2rem;
     color: #999;
     cursor: pointer;
 }
-.aside .fa-times:hover {
+.fa-times:hover {
     color: #333;
 }
-.aside .aside-content {
+.asideContent {
     max-height: calc(100vh - 2rem);
     overflow: auto;
 }
 
 @media (max-width: 30rem) {
-    .aside-container {
+    .asideContainer {
         border-radius: 0;
     }
 }
