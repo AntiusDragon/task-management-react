@@ -15,7 +15,7 @@ export function TaskCard({ data }) {
         //     tagsList.push(<Tag title={tag} />);
         // }
         
-    const tagsList = tags.map(tag => <Tag title={tag} />);
+    // const tagsList = tags.map(tag => <Tag title={tag} />);
 
     return (
         <li id="task_1" className={style.taskCard}>
@@ -24,7 +24,9 @@ export function TaskCard({ data }) {
             </div>
             <div className={style.taskTitle}>{title}</div>
             <div className={style.taskDesc}>{description}</div>
-            <div className={style.taskTags}>{tagsList}</div>
+            <div className={style.taskTags}>
+                {tags.map(tag => <Tag title={tag} />)}
+            </div>
             <div className={style.taskDeadline}>{deadline}</div>
         </li>
     );

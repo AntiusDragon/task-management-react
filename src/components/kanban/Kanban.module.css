@@ -83,3 +83,17 @@
 }
 .taskDeadline {
 }
+
+.newColumn {
+    display: flex;
+    align-items: flex-start;
+    width: 20rem;
+}
+.newColumn input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.newColumn button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
